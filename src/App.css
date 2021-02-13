@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+.Header{
+  display:flex;
+  justify-content: center;
+  color: aliceblue;
+  font-size: larger;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Search{
+  
+  width:50%;
+  margin: auto;
+  height:5vh;
+  display:flex;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Search input{
+  width:75%;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  font-size: x-large;
+  border:1px solid grey;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Search button{
+  background-color:#E50916 ;
+  width:25%;
+  padding:0;
+  border: 1px solid #E50916;
+  color:whitesmoke;
+  font-size: larger;
+  
+  
+}
+.Search input,button{
+  height:100%;
+}
+.Top{
+  background-image: url('https://images.unsplash.com/photo-1458053688450-eef5d21d43b3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80');
+  background-size: contain;
+  padding-bottom: 2rem;
+}
+.bar{
+  display: flex;
+  height:5rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #CB1A24;
+  width:50%;
+  margin: auto;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  padding-left: 4px;
+  justify-content: space-between;
+  align-items:center;
+  margin-bottom: 1rem;
+  
+}
+.bar img{
+  height:93%;
+  width: 100%;
+}
+.info{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 0.6rem;
+}
+.info p{
+  
+  margin:0;
+}
+.poster{
+  
+  width:4rem;
+  
+}
+.fav{
+  
+  width:20%;
+  height:40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color:#870103;
+  transition: all 0.3s;
+  
+}
+.fav:hover{
+  color:#FF0202;
+  font-size: xx-large;
+}
+.first{
+  display: flex;
+}
+.Page{
+  
+  width:70%;
+  margin:auto;
+  margin-top: 3rem;
+}
+.tabs{
+  
+  width:fit-content;
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 1px;
+  
+}
+.tabs div{
+  border: 1px solid #c3d0d9;
+  height: 100%;
+  padding:1rem;
+  
+  
+
+
+}
+.MoviePage{
+  border:1px solid;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected{
+  background-color:#c6ccc8 ;
 }
